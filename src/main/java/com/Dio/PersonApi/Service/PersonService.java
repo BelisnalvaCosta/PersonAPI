@@ -1,8 +1,8 @@
 package com.Dio.PersonApi.Service;
 
 import com.Dio.PersonApi.Entity.Person;
-import com.Dio.PersonApi.Mapper.PersonMapper;
 import com.Dio.PersonApi.Repository.PersonRepository;
+import com.Dio.PersonApi.dto.Mapper.PersonMapper;
 import com.Dio.PersonApi.dto.Request.PersonDTO;
 import com.Dio.PersonApi.dto.response.MessageResponseDTO;
 import com.Dio.PersonApi.exception.PersonNotFoundException;
@@ -19,6 +19,9 @@ public class PersonService {
     private final PersonRepository personRepository;
 
     private final PersonMapper personMapper;
+
+    public static List<PersonDTO> listAll() {
+    }
 
     public MessageResponseDTO create(PersonDTO personDTO) {
 

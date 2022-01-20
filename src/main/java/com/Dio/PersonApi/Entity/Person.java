@@ -28,7 +28,7 @@ public class Person {
     @Column(nullable = false)
     private String lastName;
 
-    @Column(nullable = false, Unique = true)
+    @Column(nullable = false, unique = false)
     private String cpf;
 
     private LocalDate birthDate;
